@@ -12,7 +12,9 @@ def optimizer_gradient(xdata,ydata,learning_rate,max_iter,epsilon=0.0):
     axarr[0,0].set_title('original')
 
     #model 2th-polynomial: ax^2 + bx +c
-    pt = np.random.rand(3,1)
+    #pt = np.random.rand(3,1)
+    pt = np.zeros((3,1))
+
     r_fun = lambda p:(ydata -(p[0,0]*xdata**2+p[1,0]*xdata+p[2,0]))
     Jrp = nd.Jacobian(r_fun)
 
