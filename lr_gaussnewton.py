@@ -37,4 +37,4 @@ def optimizer_gauss_newton(xdata,ydata,learning_rate,max_iter,epsilon=0.0):
 if __name__ == '__main__':
     xdata = np.reshape(np.arange(0,1,0.1),(-1,1))
     ydata = 2.1*xdata**2 -1.5*xdata + 0.5
-    optimizer_gradient(xdata,ydata,0.05,4)
+    optimizer_gauss_newton(xdata,ydata,0.05,4)
